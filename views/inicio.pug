@@ -1,0 +1,33 @@
+extends ./layout/index
+
+block slider
+    .slider     
+        h1 Río de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5 
+            .col-md-6 
+                p viverra pellentesque. Praesent in efficitur felis. Nulla facilisi. Phasellus vitae arcu et nibh commodo aliquet quis non ligula. Phasellus eget enim neque. Nam commodo risus ac lobortis placerat.
+                
+                p vestibulum. Aenean et est convallis, porttitor neque bibendum, venenatis neque. Suspendisse semper interdum porttitor. Nunc interdum justo sit amet euismod posuere. Vivamus efficitur vulputate velit, a accumsan urna dictum vitae. Maecenas in velit nec mauris dignissim finibus non ac purus.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="img-nos" class='img-fluid')
+
+        include ./layout/viaje
+
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% De descuento
+                        p.titulo Viaje a canada
+                        p.fecha 20 de Diciembre de 2023 - 28 de Diciembre 2023
+                        p.precio 
+
+    .container  
+        h2.mt-5.text-center Testimoniales
+            include ./layout/testiBlock
